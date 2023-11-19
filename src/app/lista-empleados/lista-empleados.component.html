@@ -1,0 +1,27 @@
+<h3>Lista empleados</h3>
+<table class="table table-striped">
+    <thead class="table-dark">
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Rol</th>
+                <th>Email</th>
+                <th>NumeroTelefonico</th>
+                <th>Responsabilidades</th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let empleado of empleados">
+          <td>{{empleado.codigo}}</td>
+          <td>{{empleado.nombre}}</td>
+          <td>{{empleado.edad}}</td>
+          <td>{{empleado.rol}}</td>
+          <td>{{empleado.email}}</td>
+          <td>{{empleado.numeroTelefonico}}</td>
+          <td>{{empleado.responsabilidades}}</td>
+
+        </tr>
+    </tbody>
+</table>
+
